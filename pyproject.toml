@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "talk-db"
+name = "db-talk"
 version = "0.0.1"
 description = "Natural language to SQL query interface"
 readme = "README.md"

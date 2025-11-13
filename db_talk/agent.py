@@ -212,7 +212,7 @@ class Agent:
             if self.verbosity >= Verbosity.NORMAL:
                 logging.info(ui.magenta(f"--- Agent Turn {turn} ---"))
             with profiler.track_llm():
-                answer = await mc.allm(conv)
+                answer = await self.llm(conv)
             if drop_messages:
                 # Drop messages by list of indexes
                 for idx in sorted(drop_messages, reverse=True):
