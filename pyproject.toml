@@ -25,13 +25,19 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    "ai-microcore>=4.4.4",
+    "ai-microcore>=5.0.0a1",
     "dotenv>=0.9.9",
     "sqlalchemy",
     "asyncpg~=0.30.0",
     "geoalchemy2",
-    # tools used by AI
     "geopandas",
+    "pydantic>=2.12.4",
+    "fastapi>=0.116.1",
+    "uvicorn>=0.22.0",
+    "typer>=0.16.1",
+    "requests~=2.32.3",
+    "pydantic~=2.12.3",
+    "asyncpg"
 ]
 
 [project.optional-dependencies]
@@ -40,7 +46,6 @@ dev = [
     "ruff>=0.8.0",
     "mypy>=1.11.0",
 ]
-
 [project.urls]
 Homepage = "https://github.com/Nayjest/db-talk"
 Repository = "https://github.com/Nayjest/db-talk"
