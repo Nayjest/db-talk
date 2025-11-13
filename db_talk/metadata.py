@@ -48,5 +48,5 @@ async def async_describe(
 ) -> str:
     metadata = MetaData()
     async with engine.begin() as conn:
-        await conn.run_sync(metadata.reflect, schema="public")
+        await conn.run_sync(metadata.reflect, schema=schema)
     return _describe(metadata, engine, schema, short)
