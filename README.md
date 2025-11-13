@@ -1,11 +1,11 @@
-# talk-db
+# db-talk
 
 Natural language to SQL query interface. Talk to your database in plain language.
 
 ## Installation
 
 ```bash
-pip install talk-db
+pip install db-talk
 ```
 
 ## Requirements
