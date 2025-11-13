@@ -25,7 +25,13 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
-    # Add your dependencies here
+    "ai-microcore>=4.4.4",
+    "dotenv>=0.9.9",
+    "sqlalchemy",
+    "asyncpg~=0.30.0",
+    "geoalchemy2",
+    # tools used by AI
+    "geopandas",
 ]
 
 [project.optional-dependencies]
